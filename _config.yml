@@ -1,0 +1,12 @@
+# Site settings
+title: My Digital Life
+#email: your-email@domain.com
+description: "Just another blog of a passionate programmer."
+baseurl: ""
+url: "http://danyup.githup.io"
+twitter_username: danyup84
+github_username:  danyup
+
+# Build settings
+markdown: kramdown
+permalink: pretty
