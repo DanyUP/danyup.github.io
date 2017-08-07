@@ -1,0 +1,29 @@
+<div class="sidebar">
+    <h4 class="sidebar-heading">
+        {% if site.author %}
+            {{ site.author | escape }}
+        {% else %}
+            {{ site.title | escape }}
+        {% endif %}
+    </h4>
+    <ul class="contact-list list-unstyled">
+        {% if site.email %}
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        {% endif %}
+    </ul>
+    <p class="text-justify">{{ site.description | escape }}</p>
+    <h5>Contatti</h5>
+    <ul class="social-media-list list-unstyled">
+        {% if site.github_username %}
+        <li>
+        {% include icon-github.html username=site.github_username %}
+        </li>
+        {% endif %}
+
+        {% if site.twitter_username %}
+        <li>
+        {% include icon-twitter.html username=site.twitter_username %}
+        </li>
+        {% endif %}
+    </ul>
+</div>

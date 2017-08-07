@@ -1,0 +1,56 @@
+---
+---
+
+@import "variables";
+@import "bootstrap";
+
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+@import "syntax-highlighting";
+
+//Mixins
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
+//Styles
+html { 
+    position: relative;
+    min-height: 100%;
+    background: url(images/skyscrapers.jpg) no-repeat center center fixed; 
+    @include background-size(cover);
+}
+
+body {
+    margin-bottom: $footer-height;
+}
+
+small.post-meta {
+    display: block;
+}
+
+.home {
+
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    background-color: $navbar-default-bg;
+    border-color: $navbar-default-border;
+    border-width: 1px 0 0;
+    border-style: solid;
+    padding-top: $footer-padding;
+}
+
+.sidebar {
+    margin-top: $sidebar-margin;
+}

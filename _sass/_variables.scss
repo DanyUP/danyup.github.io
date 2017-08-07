@@ -1,0 +1,22 @@
+
+
+$navbar-default-color:             #d8d8d8 !default;
+$navbar-default-bg:                #333 !default;
+$body-bg:                          rgba(0,0,0,0.6) !default;
+
+$navbar-default-link-color:                #d8d8d8 !default;
+$navbar-default-link-hover-color:          darken($navbar-default-link-color, 10%) !default;
+$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-active-bg:            lighten($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color:       #ccc !default;
+
+$text-color:                       #d8d8d8 !default;
+
+@import "bootstrap/variables";
+
+$footer-height: 50px !default;
+$footer-padding: floor(( ($footer-height - $line-height-computed) / 2 )) !default;
+
+$sidebar-margin: floor(($line-height-computed * 3));
+
+$spacing-unit:     30px !default;
